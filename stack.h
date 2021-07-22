@@ -1,19 +1,24 @@
-#include <stdio.h>
+#ifndef _STACK_H_
+#define _STACK_H_
+
 #include <stdlib.h>
 
 typedef struct stack {
-    int info;
+    int col;
+    int row;
     struct stack* next;
 } Stack;
 
-Stack* create_stack();
+Stack* createStack();
 
-void free_stack(Stack* s);
+void freeStack(Stack* s);
 
-Stack* push(Stack* s, int elem);
+Stack* push(Stack* s, int col, int row);
 
 Stack* pop(Stack* s);
 
 int top(Stack* s);
 
-int empty_stack(Stack* s);
+int emptyStack(Stack* s);
+
+#endif

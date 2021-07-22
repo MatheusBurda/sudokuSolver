@@ -7,6 +7,8 @@ int** createBoard() {
     for (int i = 0; i < SIZE; i++)
         board[i] = (int*)malloc(SIZE * sizeof(int));
 
+    board = readFile(board);
+
     return board;
 }
 
@@ -16,10 +18,9 @@ void freeBoard(int** board) {
     free(board);
 }
 
-int** readFile() {
+int** readFile(int** board) {
     int i, j;
     FILE* fp;
-    int** board;
 
     fp = fopen(NAME_OF_FILE, "r");
 
@@ -27,8 +28,6 @@ int** readFile() {
         printf("ERROR: couldnt open %s.\n", NAME_OF_FILE);
         exit(1);
     }
-
-    board = createBoard();
 
     for (i = 0; i < SIZE; i++)
         for (j = 0; j < SIZE; j++)
@@ -54,4 +53,3 @@ void printBoard(int** board) {
             printf("—————————————————————\n");
     }
 }
-

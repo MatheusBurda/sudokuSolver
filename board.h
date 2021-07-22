@@ -10,7 +10,7 @@
 
 void freeBoard(int** board);
 int** createBoard();
-int** readFile();
+int** readFile(int** board);
 void printBoard(int** board);
 
 #endif

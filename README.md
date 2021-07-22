@@ -17,11 +17,6 @@ make all
 ./sudokuSolver
 ```
 
-  Rebuild:
-```
-make rebuild
-```
-
   Clean:
 ```
 make clean
