@@ -44,3 +44,4 @@ int emptyStack(Stack* s) {
         return 1;
     return 0;
 }
+

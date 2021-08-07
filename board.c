@@ -1,5 +1,14 @@
+/****************************************************/
+/* 			    Estruturas de Dados  1 			    */
+/*          Aluno: Matheus Augusto Burda            */
+/*					RA: 1661736						*/
+/*               Trabalho Prático                   */
+/*                 Sudoku Solver                    */
+/****************************************************/
+
 #include "board.h"
 
+/* Creates a board of 9x9 int. */
 int** createBoard() {
     int** board;
 
@@ -12,12 +21,14 @@ int** createBoard() {
     return board;
 }
 
+/* Deallocates the board. */
 void freeBoard(int** board) {
     for (int i = 0; i < SIZE; i++)
         free(board[i]);
     free(board);
 }
 
+/* Reads the "board.txt" file and returns a int matrix containing the numbers of the sudoku. */
 int** readFile(int** board) {
     int i, j;
     FILE* fp;
@@ -37,6 +48,7 @@ int** readFile(int** board) {
     return board;
 }
 
+/* Function to print the whole Sudoku Board. */
 void printBoard(int** board) {
     int i, j;
     for (i = 0; i < SIZE; i++) {
