@@ -18,8 +18,6 @@ Stack* push(Stack* s, int col, int row);
 
 Stack* pop(Stack* s);
 
-int top(Stack* s);
-
 int emptyStack(Stack* s);
 
 #endif
