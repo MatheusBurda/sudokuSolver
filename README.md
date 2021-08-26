@@ -2,7 +2,7 @@
 
 ## About 
 
-This project is a Sudoku Solver. It reads a sudoku table from the **board.txt** file and generates a valid solution for it, or returns a error message showing that the sudoku doesn't have a valid solution.
+This project is a Sudoku Solver made in C using Back-Tracking. It reads a sudoku table from the **board.txt** file and generates a valid solution for it, or returns a error message showing that the sudoku doesn't have a valid solution.
 
 Link para o vídeo explicando a solução em português:
 https://youtu.be/6_fK5sA74us
