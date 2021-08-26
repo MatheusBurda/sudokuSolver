@@ -1,5 +1,5 @@
 all:
-	gcc -o sudokuSolver sudoku.c board.c stack.c
+	gcc -o sudokuSolver src/sudoku.c src/board.c src/stack.c
 	
 clean:
 	rm sudokuSolver
